@@ -1,0 +1,42 @@
+.navbar {
+  display: flex;
+  width: 100%;
+  padding: 26px 0px;
+  justify-content: space-between;
+  align-items: center;
+  background: #6B3CC9;
+}
+
+.navbar-brand {
+  margin-right: auto;
+
+}
+
+.navbar-brand img {
+  width: 238.889px;
+  flex-shrink: 0;
+
+}
+
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-item {
+  margin-right: 15px;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: #c8a1ff !important;
+}

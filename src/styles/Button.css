@@ -1,0 +1,17 @@
+.btn-main button {
+  background-color: #f28d35;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 12px;
+  font-family: 'Inter';
+  line-height: 14px;
+  letter-spacing: -0.02em;
+  text-align: left;
+
+
+}
