@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Header.css";
+import sc from "../images/Logo.png";
 
 function Header() {
   return (
@@ -8,7 +9,7 @@ function Header() {
         <div className="container">
           <a className="navbar-brand" href="#">
             <img
-              src="src\images\Logo.png"
+              src={sc}
               alt="Logo"
               className="img-fluid"
               style={{ maxWidth: "250px" }}

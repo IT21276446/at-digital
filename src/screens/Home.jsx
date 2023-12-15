@@ -3,6 +3,9 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Button from "../components/Button";
 import "../styles/Home.css";
+import im1 from "../images/image1.png";
+import im2 from "../images/image2.png";
+import bg from "../images/bg.png";
 
 function Home() {
   return (
@@ -11,7 +14,7 @@ function Home() {
       {/* First Section */}
       <section className="first-section">
         <div className="image-container-main">
-          <img src="src\images\bg.png" alt="Your Image" />
+          <img src={bg} alt="Your Image" />
           <div className="gradient-overlay">
             <p>
               We crush your competitors, goals, and sales records - without the
@@ -28,7 +31,7 @@ function Home() {
           <div className="col-md-6 order-md-1">
             <div className="image-container d-flex align-items-center justify-content-center">
               <img
-                src="src\images\image2.png"
+                src={im2}
                 alt="Image1"
                 className="img-fluid"
               />
@@ -68,7 +71,7 @@ function Home() {
           <div className="col-md-6 order-md-2">
             <div className="image-container d-flex align-items-center justify-content-center">
               <img
-                src="src\images\image1.png"
+                src={im1}
                 alt="Image2"
                 className="img-fluid"
               />

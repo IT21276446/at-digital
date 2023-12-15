@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Footer.css";
+import sc from "../images/Logo.png";
 
 function Footer() {
   return (
@@ -9,7 +10,7 @@ function Footer() {
           <div className="footer-content">
             <div className="footer-left">
               <img
-                src="src\images\Logo.png"
+                src={sc}
                 alt="Logo"
                 className="img-fluid"
                 style={{ maxWidth: "250px" }}
