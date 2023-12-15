@@ -1,60 +1,50 @@
 import React from "react";
 import "../styles/Header.css";
 import sc from "../images/Logo.png";
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 
 function Header() {
   return (
-    <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-none">
-        <div className="container">
-          <a className="navbar-brand" href="#">
-            <img
-              src={sc}
-              alt="Logo"
-              className="img-fluid"
-              style={{ maxWidth: "250px" }}
-            />
-          </a>
+    <Navbar expand="lg" variant="light" bg="none">
+      <div className="container">
+        <Navbar.Brand href="#">
+          <img
+            src={sc}
+            alt="Logo"
+            className="img-fluid"
+            style={{ maxWidth: "250px" }}
+          />
+        </Navbar.Brand>
 
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
+        <Navbar.Toggle aria-controls="navbarNav" />
 
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ms-auto">
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Services
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  About Us
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Contact Us
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Careers
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </>
+        <Navbar.Collapse id="navbarNav">
+          <Nav className="ms-auto">
+            <Nav.Item>
+              <Nav.Link href="#" className="nav-link">
+                Services
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="#" className="nav-link">
+                About Us
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="#" className="nav-link">
+                Contact Us
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="#" className="nav-link">
+                Careers
+              </Nav.Link>
+            </Nav.Item>
+          </Nav>
+        </Navbar.Collapse>
+      </div>
+    </Navbar>
   );
 }
 
